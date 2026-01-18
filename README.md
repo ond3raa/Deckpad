@@ -1,1 +1,2 @@
-<img width="1141" height="640" alt="How it&#39;ll fit together" src="https://github.com/user-attachments/assets/dfeaaec5-5d65-4761-bac7-458e414ba642" />
+So this is my deckpad
+<img width="899" height="551" alt="Overall Deckpad" src="https://github.com/user-attachments/assets/8a713253-a328-441c-b8f3-4f7e9579eb8d" />
