@@ -25,7 +25,8 @@ Originally, I wanted to make a special pocket for the OLED, but I ended up with 
 
 ## PCB
 It connects the Seeed XIAO to all the components. It was my first time making a custom board, and I'm happy everything fits.
-<img src="Assets/PCB.png" width="800">
+<img src="Assets/PCB.png" width="800"> 
+<img src="Assets/Schematic.png" width="700">|  <br> Schematic
 ## BOM
 
 - **1x** Seeed XIAO RP2040
