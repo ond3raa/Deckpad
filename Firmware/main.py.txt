@@ -14,7 +14,7 @@ macros = Macros()
 keyboard.modules.append(macros)
 
 # 1. TLAČÍTKA (Piny 8, 9, 10, 11)
-# Odpovídá tvému zapojení SW1-SW4 ve schématu
+# Odpovídá zapojení SW1-SW4 ve schématu
 PINS = [board.D8, board.D9, board.D10, board.D11]
 keyboard.matrix = KeysScanner(
     pins=PINS,
@@ -22,7 +22,7 @@ keyboard.matrix = KeysScanner(
 )
 
 # 2. RGB LED (Pin 5)
-# Nastaveno pro tvé 4 SK6812MINI-E diody
+# Nastaveno pro 4 SK6812MINI-E diody
 rgb = RGB(pixel_pin=board.D5, num_pixels=4)
 keyboard.extensions.append(rgb)
 
@@ -33,7 +33,7 @@ keyboard.modules.append(encoder)
 encoder.pins = ((board.D1, board.D2, board.D3, False),) 
 
 # 4. OLED DISPLEJ (SCL=D6, SDA=D4)
-# Používáme tvoje piny pro I2C komunikaci, aby nebyla kolize s LED
+# Používáme piny pro I2C komunikaci, aby nebyla kolize s LED
 i2c_bus = busio.I2C(board.D6, board.D4) 
 
 display_driver = SSD1306(
@@ -45,10 +45,10 @@ display = Display(display_driver)
 keyboard.extensions.append(display)
 
 # DEFINICE KLÁVES (Zatím písmena A, B, C, D)
-# Toto si po schválení grantu můžeš kdykoliv změnit na cokoli jiného
 keyboard.keymap = [
     [KC.A, KC.B, KC.C, KC.D]
 ]
 
 if __name__ == '__main__':
+
     keyboard.go()
